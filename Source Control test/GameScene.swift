@@ -16,8 +16,15 @@ class GameScene: SKScene {
         
         let player1 = SKSpriteNode(imageNamed: "player1")
         player1.setScale(0.5)
-        player1.position = CGPoint(x: 0, y: 0)
+        player1.position = CGPoint(x: 0, y: -100)
         player1.zPosition = 1
         addChild(player1)
+        
+        let player2 = SKSpriteNode(imageNamed: "player2")
+        player2.setScale(0.5)
+        player2.position = CGPoint(x: 0, y: 100)
+        player2.zPosition = 1
+        addChild(player2)
+        
     }
 }
